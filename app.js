@@ -25,8 +25,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/index.html');
 });
-//app.use('/', routes);
-//app.use('/users', users);
 app.use('/socket', socket);
 
 // catch 404 and forward to error handler
